@@ -6,7 +6,8 @@ public class Tournament {
        //Create a class that checks a line input and returns score
 
        try {
-        String filename = "strategy_guide.txt";
+
+        String filename = "Day2\\src\\Resources\\strategy_guide.txt";
         String line;
         FileReader fr = new FileReader(filename);
         BufferedReader br = new BufferedReader(fr);
@@ -18,10 +19,11 @@ public class Tournament {
 
         System.out.printf("You scored a total of %d points", trac.getTotalScore() );
 
-
+        br.close();
         
        } catch (Exception e) {
             System.out.println(e);
+            e.printStackTrace();
        }
         
     }

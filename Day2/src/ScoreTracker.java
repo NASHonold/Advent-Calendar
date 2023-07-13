@@ -32,28 +32,28 @@ public class ScoreTracker {
         switch (mine) {
             case 'X':
                 score+= 1;
-                if (op == 'A'){
+                if (op == 'A'){//Rock v Rock
                     score += 3;
                 }
-                else if (op == 'Z' ){
+                else if (op == 'Z' ){//Rock v Scissors
                     score += 6;
                 }
                 break;
             case 'Y':
                 score+= 2;
-                if (op == 'B'){
+                if (op == 'B'){//Paper v Paper
                     score += 3;
                 }
-                else if (op == 'A' ){
+                else if (op == 'A' ){//Paper V Rock
                     score += 6;
                 }
                 break;
             case 'Z':
                 score+= 3;
-                if (op == 'C'){
+                if (op == 'C'){//Scissors v Scissors
                     score += 3;
                 }
-                else if (op == 'B' ){
+                else if (op == 'B' ){//Scissors v Paper
                     score += 6;
                 }
                 break;
