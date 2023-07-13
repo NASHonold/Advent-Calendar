@@ -69,6 +69,10 @@ public class ScoreTracker {
         this.total += score;
     }
 
+    public int getTotalScore(){
+        return this.total;
+    }
+
 
 
 }

@@ -7,10 +7,17 @@ public class App {
 
        try {
         String filename = "strategy_guide.txt";
+        String line;
         FileReader fr = new FileReader(filename);
         BufferedReader br = new BufferedReader(fr);
+        ScoreTracker trac = new ScoreTracker();
 
-        
+        while ((line = br.readLine()) != null){
+            trac.recordScore(line);
+        }
+
+        System.out.printf("You scored a total of %d points", trac.getTotalScore() );
+
 
         
        } catch (Exception e) {
