@@ -1,6 +1,6 @@
 public class ScoreTracker {
     
-    Integer total;
+    private Integer total;
     /*
      * A = Rock
      * B = Paper

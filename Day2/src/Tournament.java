@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 
-public class App {
+public class Tournament {
     public static void main(String[] args) throws Exception {
        //Create a class that checks a line input and returns score
 
