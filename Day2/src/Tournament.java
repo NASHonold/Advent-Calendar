@@ -13,13 +13,13 @@ public class Tournament {
         FileReader fr = new FileReader(filename);
         BufferedReader br = new BufferedReader(fr);
         ScoreTracker trac = new ScoreTracker();
-        int idx = 1;
+        //int idx = 1;
 
         while ((line = br.readLine()) != null){
 
             trac.recordScore(line);
             //System.out.printf("You have %d points on iteration %d\n", trac.getTotalScore(), idx);
-            idx++;
+            //idx++;
         }
 
         System.out.printf("Your guess scored a total of %d points", trac.getProjectedTotalScore());
