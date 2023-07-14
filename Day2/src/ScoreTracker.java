@@ -17,7 +17,6 @@ public class ScoreTracker {
 
     private char[] lineParser(String line){
 
-
         line = line.trim();
         line = line.toUpperCase();
         line = line.replace(" ", "");
