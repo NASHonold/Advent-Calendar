@@ -8,13 +8,18 @@ public class Tournament {
        try {
 
         String filename = "Day2\\src\\Resources\\strategy_guide.txt";
+        //String filename = "Day2\\src\\Resources\\test.txt";
         String line;
         FileReader fr = new FileReader(filename);
         BufferedReader br = new BufferedReader(fr);
         ScoreTracker trac = new ScoreTracker();
+        int idx = 1;
 
         while ((line = br.readLine()) != null){
+
             trac.recordScore(line);
+            System.out.printf("\nYou have %d points on iteration %d", trac.getTotalScore(), idx);
+            idx++;
         }
 
         System.out.printf("You scored a total of %d points", trac.getTotalScore() );

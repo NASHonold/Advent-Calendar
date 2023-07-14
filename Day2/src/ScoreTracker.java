@@ -30,31 +30,49 @@ public class ScoreTracker {
         char mine = symbols[1];
 
         switch (mine) {
-            case 'X':
-                score+= 1;
+            case 'X':// You play Rock
+                score+= 1; 
+                System.out.print("You have played Rock against ");
                 if (op == 'A'){//Rock v Rock
                     score += 3;
+                    System.out.println("Rock. This is a draw.");
                 }
-                else if (op == 'Z' ){//Rock v Scissors
+                else if (op == 'C' ){//Rock v Scissors
                     score += 6;
+                    System.out.println("Scissors. This is a win!");
+                }
+                else{
+                    System.out.println("Paper. This is a loss.");
                 }
                 break;
-            case 'Y':
+            case 'Y':// You play Paper
                 score+= 2;
+                System.out.print("You have played Paper against ");
                 if (op == 'B'){//Paper v Paper
                     score += 3;
+                    System.out.println("Paper. This is a draw.");
                 }
                 else if (op == 'A' ){//Paper V Rock
                     score += 6;
+                    System.out.println("Rock. This is a win!");
+                }
+                else{
+                    System.out.println("Scissors. This is a loss.");
                 }
                 break;
-            case 'Z':
+            case 'Z':// You play Scissors
                 score+= 3;
+                System.out.print("You have played Scissors against ");
                 if (op == 'C'){//Scissors v Scissors
                     score += 3;
+                    System.out.println("Scissors. This is a draw.");
                 }
                 else if (op == 'B' ){//Scissors v Paper
                     score += 6;
+                    System.out.println("Paper. This is a win!");
+                }
+                else{
+                    System.out.println("Rock. This is a loss.");
                 }
                 break;
 
