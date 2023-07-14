@@ -6,9 +6,9 @@ public class ScoreTracker {
      * A = Rock
      * B = Paper
      * C = Scissors
-     * X = Rock
-     * Y = Paper
-     * Z = Scissors
+     * X = Rock/lose
+     * Y = Paper/draw
+     * Z = Scissors/win
      */
     public ScoreTracker(){
         this.projectedTotal = 0;
