@@ -18,11 +18,12 @@ public class Tournament {
         while ((line = br.readLine()) != null){
 
             trac.recordScore(line);
-            System.out.printf("\nYou have %d points on iteration %d", trac.getTotalScore(), idx);
+            //System.out.printf("You have %d points on iteration %d\n", trac.getTotalScore(), idx);
             idx++;
         }
 
-        System.out.printf("You scored a total of %d points", trac.getTotalScore() );
+        System.out.printf("Your guess scored a total of %d points", trac.getProjectedTotalScore());
+        System.out.printf("\nYou actual scored a total of %d points", trac.getActualScore());
 
         br.close();
         
