@@ -22,8 +22,8 @@ public class Tournament {
             //idx++;
         }
 
-        System.out.printf("Your guess scored a total of %d points", trac.getProjectedTotalScore());
-        System.out.printf("\nYou actual scored a total of %d points", trac.getActualScore());
+        System.out.printf("Your guess score a total of %d points", trac.getProjectedTotalScore());
+        System.out.printf("\nYour actual score a total of %d points", trac.getActualScore());
 
         br.close();
         
