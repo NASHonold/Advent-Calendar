@@ -16,8 +16,8 @@ public class Rucksack {
   }
 
   /*
-   *This divides the content string in two equal substrings
-   *and sets them to lPocket and rPocket
+   * This divides the content string in two equal substrings
+   * and sets them to lPocket and rPocket
    */
   private void setPockets() {
     int sLen = this.contents.length();
@@ -25,11 +25,6 @@ public class Rucksack {
     this.rPocket = contents.substring(sLen / 2);
   }
 
-
-
-
-
-  
   /*
    * This sets the object hashmap attribute with all
    * chars and priority values as respective key, value pair
@@ -48,7 +43,8 @@ public class Rucksack {
 
       if ((this.lPocket.indexOf(this.rPocket.charAt(i))) > -1) {
         this.commonItem = key;
-      } else this.priorities.put(key, val);
+      } else
+        this.priorities.put(key, val);
     }
   }
 
@@ -58,7 +54,10 @@ public class Rucksack {
    */
   private int priorityConvert(char chr) {
     int rVal = (int) chr;
-    if (rVal > 96) rVal = rVal - 96; else rVal = rVal - 38;
+    if (rVal > 96)
+      rVal = rVal - 96;
+    else
+      rVal = rVal - 38;
     return rVal;
   }
 
@@ -67,9 +66,11 @@ public class Rucksack {
   }
 
   public int getCommonPriority() {
-    if (getCommonItem() != ' ') return this.priorities.get(
-        this.commonItem
-      ); else return 0;
+    if (getCommonItem() != ' ')
+      return this.priorities.get(
+          this.commonItem);
+    else
+      return 0;
   }
 
   public String getContents() {
@@ -86,23 +87,20 @@ public class Rucksack {
   public void print() {
     System.out.println("======= Rucksack =======");
     System.out.println(
-      "Contents: " +
-      this.contents +
-      " with length of: " +
-      this.contents.length()
-    );
+        "Contents: " +
+            this.contents +
+            " with length of: " +
+            this.contents.length());
     System.out.println(
-      "Left Pocket: " +
-      this.lPocket +
-      " with length of: " +
-      this.lPocket.length()
-    );
+        "Left Pocket: " +
+            this.lPocket +
+            " with length of: " +
+            this.lPocket.length());
     System.out.println(
-      "Right Pocket: " +
-      this.rPocket +
-      " with length of: " +
-      this.rPocket.length()
-    );
+        "Right Pocket: " +
+            this.rPocket +
+            " with length of: " +
+            this.rPocket.length());
     System.out.println("Common Item: " + this.commonItem);
     System.out.println("Priority Value: " + getCommonPriority());
     System.out.println("========================\n");
