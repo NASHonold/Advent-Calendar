@@ -23,7 +23,7 @@ public class Reorg {
         ruckList.add(ruck);
         idx++;
       }
-
+      System.out.println("========= DAY 3 =========");
       System.out.println("Part 1 Answer: " + prSum);
 
       //now we have groups of three and the common item between the 3 is the badge
