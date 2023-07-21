@@ -48,9 +48,6 @@ public class Reorg {
 
         int teamPriority = team.get(0).getCharPriority(teamBadge);
         teamPrSum += teamPriority;
-        if (teamPrSum == 0) {
-          System.out.println("Found  0 here. Line: " + (i + 1));
-        }
       }
 
       System.out.println("Part 2 Answer: " + teamPrSum);
