@@ -4,7 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ElfTeam {
+public class ElfTeam {//
 
     private ArrayList<Elf> team = new ArrayList<Elf>();
     private long totalFoodCalories;
